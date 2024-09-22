@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    background-image: url('Warrier.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: .6em;
+    margin-top: .9em;
+}
+.day1, .day2{
+    font-size: 2em;
+}
+.extra{
+    display: flex;
+    width: 100%;
+}
+
+.row1, .row2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1.2em;
+    gap: 10px;
+}
+.cont{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border-radius: .5em;
+    background: rgba(255, 255, 255, 0.1); /* White with transparency */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+.time{
+    margin-top: .2em;
+    margin-bottom: .7em;
+    font-size: 1.2em;
+    display: flex;
+}
+.locate{
+    display: flex;
+}
+.sec2 svg{
+    width: .9em;
+    margin-right: .2em;
+}
+.event{
+    font-size: 1.7em;
+    margin-bottom: .6em;
+}
+.eventtype{
+    background: rgba(255, 255, 255, 0.1); /* White with transparency */
+    padding: .2em .6em;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.sec2{
+    font-size: 1.2em;
+}
+@media(max-width:860px){
+    .row{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .cont{
+        width: 90%;
+    }
+    .title{
+        margin-bottom: .7em;
+    }
+    .day1, .day2{
+        font-size: 2em;
+    }
+    .event{
+        font-size: 1.2em;
+        margin-bottom: .9em;
+    }
+    .extra{
+        flex-direction: column;
+    }
+    .extTime{
+        font-size: .8em;
+    }
+}
+
